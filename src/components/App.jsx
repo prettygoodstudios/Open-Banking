@@ -1,4 +1,9 @@
 import React, {Component} from "react";
+import Header from "./Header.jsx";
+import How from "./How.jsx";
+import What from "./What.jsx";
+import Learn from "./Learn.jsx";
+import Economy from "./Economy.jsx";
 
 class App extends Component {
     constructor(){
@@ -8,7 +13,14 @@ class App extends Component {
     render(){
         return(
             <div>
-                <h1>Open Banking</h1>
+                <Header/>
+                <How />
+                <Economy />
+                <What />
+                <Learn />
+                <div className="footer">
+                    Miguel Rust &copy;2020
+                </div>
             </div>
         );
     }

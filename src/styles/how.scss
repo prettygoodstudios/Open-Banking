@@ -1,0 +1,40 @@
+.how{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 300px;
+    h1{
+        font-size: 3em;
+        grid-column: 1/3;
+    }
+    .api{
+        grid-row: 2;
+        font-size: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        grid-row: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .how{
+        display: flex;
+        flex-direction: column;
+        p{
+            display: block;
+        }
+
+        .api{
+            font-size: 100px;
+        }
+    }
+}

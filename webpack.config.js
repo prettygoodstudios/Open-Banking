@@ -15,11 +15,11 @@ module.exports = {
             loader: 'babel-loader',
         },
         { 
-            test: /\.scss$/, 
+            test: /\.scss$|.css$/, 
             loader: 'style-loader'
         },
         {
-            test: /\.scss$/, 
+            test: /\.scss$|.css$/, 
             use: 'css-loader' 
         },
         { 

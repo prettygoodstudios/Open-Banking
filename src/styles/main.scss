@@ -1,6 +1,28 @@
 @import "variables.scss";
+@import "header.scss";
+@import "how.scss";
+@import "what.scss";
+@import "learn.scss";
+@import "economy.scss";
+
 html, body{
     background-color: $background-color;
     color: $main-text-color;
     font-family: $main-font;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: $main-text-color;
+    color: $background-color;
+    font-size: 20px;
+    margin-top: 20px;
+    bottom: 0;
 }
