@@ -52,8 +52,8 @@ class Economy extends Component{
                 <h1>What will open banking regulations do to the economy?</h1>
                 <div className="money">
                     {
-                        this.state.money.map(({x, y}) => {
-                            return <span style={{left: x, top: y, position: 'absolute', fontSize: '30px', display: (y>400) ? 'none' : 'block'}}>$</span>
+                        this.state.money.map(({x, y}, i) => {
+                            return <span style={{left: x, top: y, position: 'absolute', fontSize: '30px', display: (y>400) ? 'none' : 'block'}} key={i}>$</span>
                         })
                     }
                     <i className="fas fa-chart-line"></i>

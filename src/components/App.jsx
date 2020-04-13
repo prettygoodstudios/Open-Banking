@@ -4,6 +4,7 @@ import How from "./How.jsx";
 import What from "./What.jsx";
 import Learn from "./Learn.jsx";
 import Economy from "./Economy.jsx";
+import Nav from "./Nav.jsx";
 
 class App extends Component {
     constructor(){
@@ -13,6 +14,7 @@ class App extends Component {
     render(){
         return(
             <div>
+                <Nav/>
                 <Header/>
                 <How />
                 <Economy />

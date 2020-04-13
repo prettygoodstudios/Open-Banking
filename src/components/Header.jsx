@@ -64,9 +64,9 @@ class Header extends Component{
                     <i className="fas fa-university"></i>
                     <i className="fas fa-mobile-alt"></i>
                     {
-                        this.state.zeroes.map(({x, y, val}) => {
+                        this.state.zeroes.map(({x, y, val}, i) => {
                             return(
-                                <span style={{left: x, top: y, position: 'absolute', fontSize: '15px'}}>{val}</span>
+                                <span style={{left: x, top: y, position: 'absolute', fontSize: '15px'}} key={i}>{val}</span>
                             )
                         })
                     }
