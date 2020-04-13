@@ -58,7 +58,7 @@ class Economy extends Component{
                     }
                     <i className="fas fa-chart-line"></i>
                 </div>
-                <p>Open banking regulations will result in increased investment in the financial technology industry due to it democratizing access to financial APIs.</p>
+                <p>Open banking regulations will increase investment in the financial technology industry due to the democratization of financial APIs. Currently only <span>5.9%</span> of financial institutions offer publicly available APIs. With open banking this would change.</p>
             </div>
         )
     }

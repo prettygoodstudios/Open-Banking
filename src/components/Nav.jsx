@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import smoothscroll from 'smoothscroll-polyfill';
 
 
 class Nav extends Component {
@@ -8,23 +9,23 @@ class Nav extends Component {
             links: [
                 {
                     title: "Home",
-                    action: () => alert("home")
+                    action: () => this.scrollTo("header")
                 },
                 {
                     title: "How",
-                    action: () => alert("home")
-                },
-                {
-                    title: "What Will Happen?",
-                    action: () => alert("home")
+                    action: () => this.scrollTo("how")
                 },
                 {
                     title: "Economy",
-                    action: () => alert("home")
+                    action: () => this.scrollTo("economy")
+                },
+                {
+                    title: "What Will Happen?",
+                    action: () => this.scrollTo("what")
                 },
                 {
                     title: "Learn",
-                    action: () => alert("home")
+                    action: () => this.scrollTo("learn")
                 }
             ],
             position: "relative",
@@ -34,6 +35,7 @@ class Nav extends Component {
     }
 
     componentDidMount(){
+        smoothscroll.polyfill();
         window.addEventListener("scroll", (e) => {
             if(window.scrollY > 200){
                 this.setState({
@@ -52,6 +54,16 @@ class Nav extends Component {
             toggleState: this.state.toggleState == "nav__toggle-open" ? "nav__toggle-closed" : "nav__toggle-open",
             mobileMenu: !this.state.mobileMenu
         });
+    }
+
+    scrollTo(className){
+        const element = document.querySelector("."+className);
+        const options = {
+            top: element.offsetTop - 120,
+            left: 0,
+            behavior: "smooth"
+        }
+        window.scroll(options);
     }
 
     render(){

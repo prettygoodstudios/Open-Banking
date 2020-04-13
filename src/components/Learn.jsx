@@ -8,7 +8,7 @@ class Learn extends Component{
                 <div className="icon-holder">
                     <i className="fas fa-book-open"></i>
                 </div>
-                <p>The Stanford Vienna Transatlantic Technology Law Forum has an indepth case study on open banking. You can read it by clicking the link below.</p>
+                <p>The Stanford Vienna Transatlantic Technology Law Forum has an in-depth case study on open banking. You can read it by clicking the link below.</p>
                 <div className="link-box">
                     <a href="https://law.stanford.edu/publications/a-new-banking-paradigm-the-state-of-open-banking-in-europe-the-united-kingdom-and-the-united-states/">Read More!</a>
                 </div>
