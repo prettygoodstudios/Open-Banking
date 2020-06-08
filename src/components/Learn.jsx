@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import ReactHtmlParser from 'react-html-parser'; 
+import { book } from "../styles/icons";
 
 class Learn extends Component{
     render(){
@@ -6,7 +8,7 @@ class Learn extends Component{
             <div className="learn">
                 <h1>Where can I learn more?</h1>
                 <div className="icon-holder">
-                    <i className="fas fa-book-open"></i>
+                    { ReactHtmlParser( book.html ) }
                 </div>
                 <p>The Stanford Vienna Transatlantic Technology Law Forum has an in-depth case study on open banking. You can read it by clicking the link below.</p>
                 <div className="link-box">

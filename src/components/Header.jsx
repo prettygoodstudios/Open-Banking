@@ -1,11 +1,16 @@
 import React, {Component} from "react";
+import ReactHtmlParser from 'react-html-parser'; 
+import { university, mobile } from "../styles/icons";
 
 class Header extends Component{
     constructor(){
         super();
         this.state = {
-            zeroes: []
+            zeroes: [],
+            university,
+            mobile
         }
+        console.log(university)
     }
 
     componentDidMount(){
@@ -32,8 +37,11 @@ class Header extends Component{
                 }); 
             }
         }
+        console.log(university)
         this.setState({
-            zeroes
+            zeroes,
+            university,
+            mobile
         });
     }
 
@@ -61,8 +69,8 @@ class Header extends Component{
             <div className="header">
                 <h1>What is Open Banking?</h1>
                 <div className="icons">
-                    <i className="fas fa-university"></i>
-                    <i className="fas fa-mobile-alt"></i>
+                    { ReactHtmlParser(this.state.university.html) }
+                    { ReactHtmlParser (this.state.mobile.html) }
                     {
                         this.state.zeroes.map(({x, y, val}, i) => {
                             return(

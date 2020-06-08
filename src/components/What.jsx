@@ -12,7 +12,7 @@ class What extends Component{
                                 <img src="https://content.nexus.support.com/5b557b9559124044bb566bfc31a09c80/84e918c0e62411e8bbad13b6ab5f2ae1.png"/>
                             </div>
                             <div className="phone__screen__app">
-                                <img src="https://pbs.twimg.com/profile_images/1013823822686875649/Vtj5Bnva_400x400.jpg"/>
+                                <img src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/xefratv6r06jgmdyywpc"/>
                             </div>
                             <div className="phone__screen__app">
                                 <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1411210494/h0aevuezyoug4cfwrdcv.png"/>
